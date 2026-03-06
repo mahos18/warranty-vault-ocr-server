@@ -1,20 +1,19 @@
 {
   "name": "warranty-vault-ocr-server",
   "version": "1.0.0",
-  "description": "Standalone Tesseract.js OCR server for Warranty Vault",
+  "description": "Tesseract.js OCR server with PDF support for Warranty Vault",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node server.js",
     "dev": "node server.js"
   },
   "engines": {
     "node": ">=18.0.0"
   },
   "dependencies": {
-    "@railway/cli": "^4.30.5",
     "express": "^4.18.2",
+    "tesseract.js": "^5.1.0",
     "node-fetch": "^2.7.0",
-    "nodemon": "^3.1.14",
-    "tesseract.js": "^5.1.0"
+    "pdf-to-img": "^4.2.0"
   }
 }
